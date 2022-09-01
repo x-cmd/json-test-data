@@ -1,1 +1,2 @@
-x scotty mod "$@"
+git push git@gitee.com:x-cmd/json-test-data
+git push git@hub.com:x-cmd/json-test-data
