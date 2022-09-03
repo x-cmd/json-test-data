@@ -1,0 +1,10 @@
+// Reference: https://tldp.org/LDP/abs/html/exitcodes.html
+0:      Success
+1:      Catchall for general errors
+2:      Misuse of shell bultins
+126:    Command invoked cannot execute
+127:    Command not found
+128:    Invalide argument to exit
+128+n:  Fatal error signal "n"
+130:    Script termintated by Control-C
+255:    Exit status out of range
