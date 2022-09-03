@@ -12,6 +12,7 @@
         "**/net/*": "shellscript",
         "**/el/*": "shellscript",
         "**/*.awk": "awk",
+        "**/*.yml": "yml",
         "*": "shellscript",
         "*install*": "shellscript",
         "LICENSE": "text"
