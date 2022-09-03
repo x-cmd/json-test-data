@@ -1,4 +1,5 @@
 // Reference: https://tldp.org/LDP/abs/html/exitcodes.html
+// Reference: sysexits.h
 // Refernece: https://www.freebsd.org/cgi/man.cgi?query=sysexits&apropos=0&sektion=0&manpath=FreeBSD+4.3-RELEASE&format=html
 0:      Success
 1:      Catchall for general errors
