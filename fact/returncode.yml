@@ -1,7 +1,68 @@
 // Reference: https://tldp.org/LDP/abs/html/exitcodes.html
+// Refernece: https://www.freebsd.org/cgi/man.cgi?query=sysexits&apropos=0&sektion=0&manpath=FreeBSD+4.3-RELEASE&format=html
 0:      Success
 1:      Catchall for general errors
 2:      Misuse of shell bultins
+64:     EX_USAGE -
+        The command was used incorrectly, e.g., with the
+		wrong number of arguments, a bad flag, a bad syntax
+		in a parameter, or whatever.
+65:     EX_DATAERR -
+        The input data was incorrect in some way.  This
+		should only be used for user's data and not system
+		files.
+66:     EX_NOINPUT
+        An input file (not a system file) did not exist or
+		was not readable.  This could also include errors
+		like ``No message'' to a mailer (if it cared to
+		catch it).
+67:     EX_NOUSER
+        The user specified did not exist.  This might be
+		used for mail addresses or remote logins.
+68:     EX_NOHOST
+        The host specified did not exist.  This is used in
+		mail addresses or network requests.
+69:     EX_UNAVALABLE
+        A service is unavailable.  This can occur if a sup­
+		port program or file does not exist.  This can also
+		be used as a catchall message when something you
+		wanted to do doesn't work, but you don't know why.
+70:     EX_SOFTWARE
+        An internal software error has been detected.  This
+		should be limited to non-operating system related
+		errors as possible.
+71:     EX_OSERR
+        An operating system error has been detected.  This
+		is intended to be used for such things as ``cannot
+		fork'', ``cannot create pipe'', or the like.  It
+		includes things like getuid returning a user that
+		does not exist in the passwd file.
+72:     EX_OSFILE
+        Some system file (e.g., /etc/passwd, /var/run/utmp,
+		etc.) does not exist, cannot be opened, or has some
+		sort of error (e.g., syntax error).
+73:     EX_CANTCREAT
+        A (user specified) output file cannot be created.
+74:     EX_IOERR
+        An error occurred while doing I/O on some file.
+75:     EX_TEMPFAIL
+        Temporary failure, indicating something that is not
+		really an error.  In sendmail, this means that a
+		mailer (e.g.) could not create a connection, and
+		the request should be reattempted later.
+76:     EX_PROTOCOL
+        The remote system returned something that was ``not
+		possible'' during a protocol exchange.
+77:     EX_NOPERM
+        You did not have sufficient permission to perform
+		the operation.  This is not intended for file sys­
+		tem problems, which should use EX_NOINPUT or
+		EX_CANTCREAT, but rather for higher level permis­
+		sions.
+
+78:     EX_CONFIG
+        Something was found in an unconfigured or miscon­
+		figured state.
 126:    Command invoked cannot execute
 127:    Command not found
 128:    Invalide argument to exit
