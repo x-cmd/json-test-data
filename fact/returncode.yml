@@ -61,7 +61,6 @@
 		tem problems, which should use EX_NOINPUT or
 		EX_CANTCREAT, but rather for higher level permis­
 		sions.
-
 78:     EX_CONFIG
         Something was found in an unconfigured or miscon­
 		figured state.
